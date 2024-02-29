@@ -32,7 +32,6 @@ let gameIsOver = false;
 function handleGridItemClick(event) {
   if (gameIsOver) return; // Stop if game over
 
-  const clickedRow = parseInt(event.target.dataset.row);
   const clickedCol = parseInt(event.target.dataset.col);
 
   // lowest available position in the column
